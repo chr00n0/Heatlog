@@ -36,7 +36,19 @@ struct CombusionView: View {
                         .stroke(.gray, lineWidth: 5)
                 }
             } else {
-                
+                List(viewModel.combusionCoal) { _ in
+                    VStack {
+                        HStack {
+                            Text("")
+                            Spacer()
+                            Text(viewModel.amount) 
+                        }
+                        HStack {
+                            Text("\(viewModel.bagsCount)")
+                            Text("25 kg")
+                        }
+                    }
+                }
             }
             
         }
