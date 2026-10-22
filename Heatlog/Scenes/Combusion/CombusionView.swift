@@ -41,16 +41,15 @@ struct CombusionView: View {
                         HStack {
                             Text("")
                             Spacer()
-                            Text(viewModel.amount) 
+                            Text("")
                         }
                         HStack {
-                            Text("\(viewModel.bagsCount)")
-                            Text("25 kg")
+                            Text("")
+                            Text("")
                         }
                     }
                 }
             }
-            
         }
     }
 }
